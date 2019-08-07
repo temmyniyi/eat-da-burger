@@ -1,0 +1,27 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "This was the homework for week 14 of my coding boot camp. This week's challenge was to create a \"burger shop\" that contained a list of burgers to eat, a list of burgers that were already consumed, and a way to add more burgers to the list. Burgers you add display in the Current Menu (ready to eat) by default.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalargent/eat-da-burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalargent/eat-da-burger/issues"
+  },
+  "homepage": "https://github.com/kalargent/eat-da-burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {}
+}

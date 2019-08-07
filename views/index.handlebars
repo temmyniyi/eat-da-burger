@@ -1,0 +1,44 @@
+<h1> The Burger Shop</h1>
+
+<h3 id="current"> Current Menu </h3>
+<ul class = "uneaten">
+    {{#each burgers}}
+    {{#unless devoured}}
+    <li>
+        <p class="list">
+        
+        {{burger_name}}
+        
+        <button class="eat-burger btn btn-light" id="on-menu" data-id="{{id}}" data-devoured="1">
+            <i class="fas fa-hamburger"></i>   NOM! </button></p>
+    </li>
+    {{/unless}}
+    {{/each}}
+</ul>
+
+
+
+<h3 id="previous"> Previous Burgers </h3>
+<ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    <li>
+        <p>
+        
+        {{burger_name}}
+        <button class="eat-burger btn btn-light" id="off-menu" data-id="{{id}}" data-devoured="0">
+            <i class="fas fa-utensils"></i>  Add to menu </button></p>
+    </li>
+    {{/if}}
+    {{/each}}
+</ul>
+
+<form class="addAburger">
+    <div class="form-group">
+        <label for="addNew"> <h3>Enter the next burger you want to make. </h3> </label>
+        <input type="text" class="form-control add-new" id="addNewBurger" 
+            placeholder="Enter a burger here">
+        <br>
+    <button type="submit" class="btn btn-primary post"><i class="fas fa-plus-square"></i>  Submit</button>
+    
+</form>
